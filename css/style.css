@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input:not([type=checkbox]) {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #374151;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1F2937;
+  color: #EEE;
+  padding: 0 0.8rem;
+}
+header .header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+header .header #site-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+header .header #site-title .text-sm {
+  font-size: 0.9rem;
+  color: #8B5CF6;
+}
+header .header #add-new-form {
+  display: flex;
+}
+header .header #add-new-form #add-new-text {
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  flex: 1 1 0%;
+  color: #EEE;
+  background-color: #374151;
+}
+header .header #add-new-form #add-new-btn {
+  cursor: pointer;
+  padding: 0.6rem;
+  font-weight: 900;
+  color: #EC4899;
+  background-image: linear-gradient(to right, #EC4899, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 400ms ease;
+}
+header .header #add-new-form #add-new-btn:hover {
+  opacity: 0.8;
+}
+header .header #add-new-form #add-new-btn:active {
+  opacity: 0.6;
+}
+
+main {
+  padding: 0 0.8rem;
+  background-color: #374151;
+}
+main .main {
+  padding: 1.5rem 0;
+}
+main .main .main-header {
+  display: flex;
+  justify-content: space-between;
+}
+main .main .main-header h2 {
+  color: #111827;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+main .main .main-header .clear-all {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  color: #EEE;
+  background-color: transparent;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+main .main #tasks {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .main #tasks .content {
+  box-shadow: -0.2rem -0.3rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  background-color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main #tasks .content__text {
+  flex: 1 1 0%;
+  padding: 0 0.6rem 0 0;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+main .main #tasks .content__text__chkbox {
+  background-color: #8B5CF6;
+  color: #EEE;
+  width: 0.8rem;
+  height: 0.8rem;
+  cursor: pointer;
+}
+main .main #tasks .content__text__chkbox:checked + input[type=text] {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+main .main #tasks .content__text input[type=text] {
+  width: 100%;
+  color: #EEE;
+}
+main .main #tasks .content__text input[type=text]:not(:-moz-read-only) {
+  color: #EC4899;
+}
+main .main #tasks .content__text input[type=text]:not(:read-only) {
+  color: #EC4899;
+}
+main .main #tasks .content__action input {
+  display: inline-block;
+  padding: 0.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+main .main #tasks .content__action input:hover {
+  opacity: 0.8;
+}
+main .main #tasks .content__action input:active {
+  opacity: 0.6;
+}
+main .main #tasks .content__action__edit {
+  color: #8B5CF6;
+  background-image: linear-gradient(to right, #EC4899, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .main #tasks .content__action__delete {
+  color: crimson;
+}
+
+footer {
+  color: #EEE;
+  background-color: #111827;
+  margin-top: auto;
+}
+footer .copyright {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  line-height: 3;
+}
+
+/* utility */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
