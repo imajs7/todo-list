@@ -26,6 +26,7 @@ window.addEventListener( 'load', () => {
         localStorage.setItem( "jsm-todo-list", JSON.stringify( tasks ) );
 
         buildList();
+        input.value = "";
 
     } );
 
